@@ -1,3 +1,46 @@
-h1 {
-  color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.heading_1 {
+  @apply text-white font-bellefair text-[150px] uppercase;
+}
+
+.heading_2 {
+  @apply text-white font-bellefair text-[100px] uppercase;
+}
+
+.heading_3 {
+  @apply text-white font-bellefair text-[56px] uppercase;
+}
+
+.heading_4 {
+  @apply text-white font-bellefair text-[32px] uppercase;
+}
+
+.heading_5 {
+  @apply text-DOD font-barlowCondensed text-[28px] tracking-[4.725px];
+}
+
+.subheading_1 {
+  @apply text-white font-bellefair text-[28px] uppercase;
+}
+
+.subheading_2 {
+  @apply text-white font-barlowCondensed text-[14px] tracking-[2.362px] uppercase;
+}
+
+.nav_text {
+  @apply text-white font-barlowCondensed text-[16px] tracking-[2.7px];
+}
+
+.body_text {
+  @apply text-white font-barlow text-[18px] leading-[32px];
+}
+
+body {
+  cursor: url('./assets/icons/Pointer\ Copy\ 26.png'), auto;
 }
