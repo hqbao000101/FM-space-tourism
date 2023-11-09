@@ -42,5 +42,60 @@
 }
 
 body {
-  cursor: url('./assets/icons/Pointer\ Copy\ 26.png'), auto;
+  cursor: url("./assets/icons/Pointer\ Copy\ 26.png"), auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+  hr {
+    width: 500px;
+    border: 1px solid #fff;
+    opacity: 0.2515;
+    position: absolute;
+    top: 50%;
+    left: 112px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 96px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+    padding: 0 220px 0 200px;
+    position: relative;
+    top: 0;
+    left: calc((100vw - 1536px)/2);
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 11px;
+      text-transform: uppercase;
+      height: 96px;
+      transition: all 0.3s;
+      border-bottom: 3px solid transparent;
+      span {
+        font-weight: 700;
+      }
+      &.active {
+        border-bottom: 3px solid white;
+      }
+      &:not(.active):hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5021);
+      }
+    }
+  }
 }
